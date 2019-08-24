@@ -3,7 +3,14 @@ import string
 import random
 
 def index(request):
-    return JsonResponse({"string": generate_random_string()})
+    return JsonResponse({"quote": get_random_quote()})
 
-def generate_random_string(N = 64):
-    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(N))
+def get_random_quote():
+    quotes = [
+        ["Stay Hungry. Stay Foolish.", "Steve Jobs"],
+        ["Good Artists Copy, Great Artists Steal.", "Pablo Picasso"],
+        ["Argue with idiots, and you become an idiot.", "Paul Graham"],
+        ["Be yourself; everyone else is already taken.", "Oscar Wilde"],
+        ["Simplicity is the ultimate sophistication.", "Leonardo Da Vinci"]
+    ]
+    return quotes[0]

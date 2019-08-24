@@ -7,6 +7,7 @@ def index(request):
 
 def get_random_quote():
     quotes = [
+        ["I have no special talents. I am only passionately curious.", "Albert Einstein"],
         ["Stay Hungry. Stay Foolish.", "Steve Jobs"],
         ["Good Artists Copy, Great Artists Steal.", "Pablo Picasso"],
         ["Argue with idiots, and you become an idiot.", "Paul Graham"],

@@ -14,4 +14,4 @@ def get_random_quote():
         ["Be yourself; everyone else is already taken.", "Oscar Wilde"],
         ["Simplicity is the ultimate sophistication.", "Leonardo Da Vinci"]
     ]
-    return random.choice(quotes)
+    return quotes[0]
